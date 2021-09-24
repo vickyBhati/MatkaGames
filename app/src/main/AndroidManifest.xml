@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dev.goldengames">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:name="com.dev.goldengames.api.AppController"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/app_ic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.dev.goldengames.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.dev.goldengames.MainActivity"/>
+        <activity android:name="com.dev.goldengames.LoginActivity"/>
+        <activity android:name="com.dev.goldengames.DetailsActivity"/>
+        <activity android:name="com.dev.goldengames.SignUp" />
+        <activity android:name="com.dev.goldengames.OtpPage" />
+        <activity android:name="com.dev.goldengames.Home" />
+        <activity android:name="com.dev.goldengames.Profile" />
+        <activity android:name="com.dev.goldengames.ChangePass" />
+        <activity android:name="com.dev.goldengames.AllCustomer" />
+        <activity android:name="com.dev.goldengames.AllProduct" />
+        <activity android:name="com.dev.goldengames.PlayGame" />
+        <activity android:name="com.dev.goldengames.extra.NoInternet" />
+        <activity android:name="com.dev.goldengames.Otp" />
+        <activity android:name="com.dev.goldengames.ResetActivity" />
+        <activity android:name="com.dev.goldengames.ForgotPage" />
+        <activity android:name="com.dev.goldengames.BookActivity" />
+        <activity android:name="com.dev.goldengames.DivJodiPlay" />
+        <activity android:name="com.dev.goldengames.DivSinglePati" />
+        <activity android:name="com.dev.goldengames.DivTriplePatti" />
+        <activity android:name="com.dev.goldengames.HalfPanna" />
+        <activity android:name="com.dev.goldengames.FullSagam" />
+        <activity android:name="com.dev.goldengames.AccountStatmentActivity" />
+        <activity android:name="com.dev.goldengames.ActivityBetHistory" />
+        <activity android:name="com.dev.goldengames.ActivityKuberJackpot" />
+        <activity android:name="com.dev.goldengames.ActivityPlay" />
+
+
+        <service android:name="com.dev.goldengames.service.FirebaseMessageReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+
+            android:resource="@drawable/app_ic" />
+
+    </application>
+
+</manifest>

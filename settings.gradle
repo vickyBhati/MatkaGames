@@ -1,0 +1,2 @@
+rootProject.name='BMtechno'
+include ':app'

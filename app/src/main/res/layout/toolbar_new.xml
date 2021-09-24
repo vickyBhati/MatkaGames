@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_toolbar">
+
+           <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_back_white"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+               android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/icWallet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_wallet" />
+
+        <TextView
+            android:id="@+id/txtWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_bold"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</layout>

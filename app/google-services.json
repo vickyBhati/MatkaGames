@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769240622365",
+    "project_id": "navranggame",
+    "storage_bucket": "navranggame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769240622365:android:1206caf13f70da267fedf4",
+        "android_client_info": {
+          "package_name": "com.dev.navranggames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769240622365-a7nmq4045ue3o9cd8gavk1qhqrr4vpgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2LWccKy2QONmdvEHVFTwnMqpSRCKU9OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769240622365-a7nmq4045ue3o9cd8gavk1qhqrr4vpgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

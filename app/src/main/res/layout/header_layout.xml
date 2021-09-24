@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest User"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular" />
+            <TextView
+                android:layout_below="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/phone"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+        android:id="@+id/admindashboard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+            android:onClick="onClick"
+            android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_home"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prfile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_mpin"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid History"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/transList"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_file"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transction History"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llgateRe"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_report_black"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Rates"
+                android:layout_marginStart="25dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fdff"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_play"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to play"
+                android:layout_marginStart="25dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+         android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+         android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"
+                android:layout_marginStart="15dp"
+                android:visibility="visible"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginStart="25dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+</layout>

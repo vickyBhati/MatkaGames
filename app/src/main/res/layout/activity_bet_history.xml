@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_new" android:id="@+id/mytool"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".20"
+            android:text="Date"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="Market Name"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".20"
+            android:text="Variation"
+            android:textSize="10sp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".20"
+            android:text="Number"
+            android:textSize="10sp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".15"
+            android:text="Point"
+            android:textSize="10sp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/layout_bet_history"/>
+
+</LinearLayout>
+</layout>

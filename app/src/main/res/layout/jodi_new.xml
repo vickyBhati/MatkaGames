@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_new" android:id="@+id/mytool"/>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mytool"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_above="@+id/btnEnglish"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:text="Digit"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/txtService"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray_light">
+
+
+            </AutoCompleteTextView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:text="Point"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/etaAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textColorHint="@color/hint_color"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:onClick="onClick"
+                android:maxLength="6"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray_light"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddList"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Add"
+            android:onClick="onClick"
+            android:textSize="16sp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_theme"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_button_theme"/>
+
+</RelativeLayout>
+
+</layout>

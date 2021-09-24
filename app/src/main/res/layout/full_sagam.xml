@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_new" android:id="@+id/mytool"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:layout_below="@+id/mytool"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_10sdp"
+         android:layout_marginStart="@dimen/_5sdp"
+         android:layout_marginEnd="@dimen/_5sdp"
+         android:orientation="horizontal">
+
+
+         <TextView
+             android:layout_width="@dimen/_50sdp"
+             android:layout_height="wrap_content"
+             android:text="Open"
+             android:layout_gravity="center"
+             android:textSize="16sp"
+             android:textColor="@color/black"/>
+
+         <AutoCompleteTextView
+             android:id="@+id/etOpenOne"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_35sdp"
+             android:inputType="number"
+             android:layout_marginEnd="@dimen/_20sdp"
+             android:layout_marginStart="@dimen/_20sdp"
+             android:gravity="center"
+             android:background="@drawable/border_gray_light"
+             android:maxLength="3"/>
+
+
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etCloseOne"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/border_gray_light"
+                android:maxLength="3"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/etAmoutOne"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/border_gray_light"
+                android:maxLength="4"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOne"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_theme"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/one"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/btnOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnEnglish"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_button_theme"/>
+
+</RelativeLayout>
+
+
+</layout>
